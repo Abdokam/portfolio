@@ -22,8 +22,7 @@ logo2: "Khatib",
 
   aboutTitle: "À propos de moi",
 
-  aboutDescription:
-    "Développeur Full Stack passionné créant des applications web modernes, réactives et conviviales.",
+
 
   aboutCard1Title: "Haute Performance",
   aboutCard1Desc:
