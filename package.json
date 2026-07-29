@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "@splinetool/react-spline": "^4.1.0",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
