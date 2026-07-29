@@ -22,7 +22,8 @@ logo2: "خطيب",
 
   aboutTitle: "من أنا",
 
-  
+  aboutDescription:
+    "مطور Full Stack شغوف ببناء مواقع وتطبيقات ويب حديثة وسريعة ومتجاوبة وسهلة الاستخدام.",
 
   aboutCard1Title: "أداء سريع",
   aboutCard1Desc: "تطبيقات محسّنة بكود نظيف وأداء ممتاز.",
