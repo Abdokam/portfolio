@@ -1,0 +1,68 @@
+:root{
+    --bg:#050816;
+    --text:#ffffff;
+    --text-secondary:#B5B5B5;
+
+    --card:#111827;
+    --card-border:#222;
+    --text:#ffffff;
+
+--title-gradient: linear-gradient(
+        90deg,
+        #2563EB,
+        #0EA5E9,
+        #06B6D4
+    );
+      --name-gradient: linear-gradient(
+        90deg,
+        #2563EB,
+        #0891B2,
+        #06B6D4
+    );
+
+
+    
+    --primary:#25A9EB;
+    
+    --nav-bg:rgba(255,255,255,.06);
+    --nav-border:rgba(255,255,255,.10);
+
+
+    --robot-glow1: rgba(56,189,248,.45);
+    --robot-glow2: rgba(37,99,235,.28);
+    --robot-glow3: rgba(29,78,216,.12);
+
+}
+
+body[data-theme="light"]{
+
+    --bg:#F8FAFC;
+    --text:#111827;
+
+
+    --card:#FFFFFF;
+    --card-border:#E5E7EB;
+    --text:#111827;
+    --primary:#25A9EB;
+
+    --name-gradient: linear-gradient(
+        90deg,
+        #2563EB,
+        #0891B2,
+        #06B6D4
+    );
+
+    --robot-glow1: rgba(59,130,246,.75);
+    --robot-glow2: rgba(37,99,235,.45);
+    --robot-glow3: rgba(147,197,253,.22);
+     --title-gradient: linear-gradient(
+        90deg,
+        #2563EB,
+        #0EA5E9,
+        #06B6D4
+    );
+
+    --nav-bg:rgba(255,255,255,.80);
+    --nav-border:#E5E7EB;
+
+}

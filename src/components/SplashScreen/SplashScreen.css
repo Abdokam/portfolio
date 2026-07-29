@@ -1,0 +1,153 @@
+.splash{
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: .4s;
+}
+.body{
+    background: linear-gradient(90deg,#2563EB,#00C6FF,#FFFFFF);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.splash-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color: var(--text);
+}
+
+.ak-logo{
+    font-family: "Orbitron", sans-serif;
+    font-size: 130px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: white;
+  text-shadow:
+0 0 8px #2563EB,
+0 0 20px #2563EB,
+0 0 35px #2563EB;
+
+}
+
+.ak-logo span{
+    color: var(--primary);
+}
+
+.name{
+    margin-top: 0;
+    font-size:40px;
+    font-weight:800;
+    color: var(--text);
+}
+
+.name span{
+    background: var(--name-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.job{
+    color: var(--text-secondary);
+    letter-spacing:8px;
+}
+.job span{
+    background: var(--name-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line{
+    width:350px;
+    height:2px;
+    background: var(--primary);
+    box-shadow:0 0 20px var(--primary);
+    margin:25px 0;
+}
+
+.verse{
+    color: var(--text);
+    font-size:28px;
+}
+
+.surah{
+    color: var(--primary);
+}
+.background{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    z-index:-1;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(37,99,235,.28), transparent 35%),
+        radial-gradient(circle at 80% 80%, rgba(6,182,212,.25), transparent 35%),
+        radial-gradient(circle at 50% 100%, rgba(37,99,235,.18), transparent 45%),
+        linear-gradient(
+            135deg,
+            var(--bg),
+            #08111f,
+            var(--bg)
+        );
+
+    background-size:200% 200%;
+
+    animation:gradientMove 15s ease infinite;
+}
+
+.background::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background-image:
+        radial-gradient(circle,#25A9EB 1px,transparent 1px);
+
+    background-size:40px 40px;
+
+    opacity:.08;
+}
+
+.background::after{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    border-radius:50%;
+
+    background:rgba(37,169,235,.18);
+    filter:blur(140px);
+
+    top:-200px;
+    left:-200px;
+
+    animation:blobMove 18s ease-in-out infinite alternate;
+}
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    100%{
+        background-position:100% 50%;
+    }
+
+}
+
+@keyframes blobMove{
+
+    from{
+        transform:translate(0,0);
+    }
+
+    to{
+        transform:translate(250px,180px);
+    }
+
+}

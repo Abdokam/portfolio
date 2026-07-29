@@ -1,0 +1,95 @@
+.theme-toggle{
+
+    position: fixed;
+    top: 25px;
+    right: 30px;
+
+    width: 72px;
+    height: 38px;
+
+    padding: 4px;
+
+    border-radius: 999px;
+    border: 1px solid transparent;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all .35s ease;
+
+    z-index: 9999;
+
+}
+
+/* عند المرور بالماوس */
+.theme-toggle:hover{
+    transform: scale(1.05);
+}
+
+/* الدائرة */
+.toggle-thumb{
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .35s ease;
+
+    font-size: 18px;
+
+}
+
+/* ===================== */
+/* DARK MODE */
+/* ===================== */
+
+.theme-toggle.dark{
+
+    justify-content: flex-start;
+
+    background: #1B1B1B;
+
+    border: 1px solid #3d3d3d;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.45);
+
+}
+
+.theme-toggle.dark .toggle-thumb{
+
+    background: #2D2D2D;
+
+    color: #ffffff;
+
+}
+
+/* ===================== */
+/* LIGHT MODE */
+/* ===================== */
+
+.theme-toggle.light{
+
+    justify-content: flex-end;
+
+    background: #ffffff;
+
+    border: 1px solid #d9d9d9;
+
+    box-shadow: 0 10px 25px rgba(31, 7, 37, 0.15);
+
+}
+
+.theme-toggle.light .toggle-thumb{
+
+    background: #FFF4CC;
+
+    color: #F59E0B;
+
+}
